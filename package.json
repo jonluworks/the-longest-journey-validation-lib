@@ -1,0 +1,25 @@
+{
+  "name": "longest-journey-shared",
+  "version": "0.1.0",
+  "description": "a library that holds code that is shared between the client and server",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "babel-tape-runner tests/*.test.js --inspect",
+    "test-faucet": "babel-tape-runner tests/*.test.js | ./node_modules/faucet/bin/cmd.js",
+    "build": "babel src --presets babel-preset-env --out-dir dist"
+  },
+  "author": "Jon Lu",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-tape-runner": "^2.0.1",
+    "faucet": "0.0.1",
+    "tape": "^4.8.0"
+  },
+  "dependencies": {
+    "color-scheme": "^1.0.0",
+    "pathfinding": "^0.4.18",
+    "seedrandom": "^2.4.3"
+  }
+}
